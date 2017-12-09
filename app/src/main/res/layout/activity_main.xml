@@ -31,7 +31,7 @@
                 android:padding="0dp"
                 android:text="@string/team_a"
                 android:textColor="@color/colorPrimary"
-                android:textSize="25sp" />
+                android:textSize="@dimen/team_name_text_size_portrait" />
 
             <TextView
                 android:id="@+id/home_team_score"
@@ -40,9 +40,9 @@
                 android:layout_weight="3"
                 android:fontFamily="@font/scoreboard"
                 android:gravity="center"
-                android:text="0"
+                android:text="@string/initial_value"
                 android:textColor="@color/colorPrimary"
-                android:textSize="140sp" />
+                android:textSize="@dimen/score_text_size_portrait" />
 
             <Button
                 android:layout_width="match_parent"
@@ -69,9 +69,9 @@
                     android:fontFamily="sans-serif"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="0"
+                    android:text="@string/initial_value"
                     android:textColor="@color/yellow_card"
-                    android:textSize="30sp"
+                    android:textSize="@dimen/cards_text_size"
                     android:textStyle="bold" />
 
                 <TextView
@@ -82,9 +82,9 @@
                     android:fontFamily="sans-serif"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="0"
+                    android:text="@string/initial_value"
                     android:textColor="@color/red_card"
-                    android:textSize="30sp"
+                    android:textSize="@dimen/cards_text_size"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -129,7 +129,7 @@
                 android:padding="0dp"
                 android:text="@string/team_b"
                 android:textColor="@color/colorPrimary"
-                android:textSize="25sp" />
+                android:textSize="@dimen/team_name_text_size_portrait" />
 
             <TextView
                 android:id="@+id/away_team_score"
@@ -138,9 +138,9 @@
                 android:layout_weight="3"
                 android:fontFamily="@font/scoreboard"
                 android:gravity="center"
-                android:text="0"
+                android:text="@string/initial_value"
                 android:textColor="@color/colorPrimary"
-                android:textSize="140sp" />
+                android:textSize="@dimen/score_text_size_portrait" />
 
             <Button
                 android:layout_width="match_parent"
@@ -167,9 +167,9 @@
                     android:fontFamily="sans-serif"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="0"
+                    android:text="@string/initial_value"
                     android:textColor="@color/yellow_card"
-                    android:textSize="30sp"
+                    android:textSize="@dimen/cards_text_size"
                     android:textStyle="bold" />
 
                 <TextView
@@ -180,9 +180,9 @@
                     android:fontFamily="sans-serif"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="0"
+                    android:text="@string/initial_value"
                     android:textColor="@color/red_card"
-                    android:textSize="30sp"
+                    android:textSize="@dimen/cards_text_size"
                     android:textStyle="bold" />
 
             </LinearLayout>

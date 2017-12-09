@@ -4,4 +4,5 @@
     <string name="team_a">Home</string>
     <string name="team_b">Away</string>
     <string name="reset">Reset</string>
+    <string name="initial_value">0</string>
 </resources>
