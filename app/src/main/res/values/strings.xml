@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Football Scores Keeper</string>
+    <string name="button_text">GOAL!</string>
+    <string name="team_a">Home</string>
+    <string name="team_b">Away</string>
+    <string name="reset">Reset</string>
+</resources>
