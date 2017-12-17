@@ -9,12 +9,30 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    /**
+     * Declaring TextViews.
+     * TextView home_team_score_view = (TextView) findViewById(R.id.home_team_score);
+     * TextView away_team_score_view = (TextView) findViewById(R.id.away_team_score);
+     * TextView home_team_r_cards_view = (TextView) findViewById(R.id.home_team_r_cards);
+     * TextView away_team_r_cards_view = (TextView) findViewById(R.id.away_team_r_cards);
+     * TextView home_team_y_cards_view = (TextView) findViewById(R.id.home_team_y_cards);
+     * TextView away_team_y_cards_view = (TextView) findViewById(R.id.away_team_y_cards);
+     */
+
+
     int scoreHomeTeam = 0;
     int scoreAwayTeam = 0;
     int rCardsHomeTeam = 0;
     int rCardsAwayTeam = 0;
     int yCardsHomeTeam = 0;
     int yCardsAwayTeam = 0;
+    TextView homeTeamScoreTextView;
+    TextView awayTeamScoreTextView;
+    TextView homeTeamRCardsTextView;
+    TextView homeTeamYCardsTextView;
+    TextView awayTeamRCardsTextView;
+    TextView awayTeamYCardsTextView;
+
 
     Activity activity;
 
@@ -36,6 +54,15 @@ public class MainActivity extends AppCompatActivity {
 
         activity = MainActivity.this;
 
+        /**
+         * Define TextViews
+         */
+        homeTeamScoreTextView = (TextView) findViewById(R.id.home_team_score);
+        awayTeamScoreTextView = (TextView) findViewById(R.id.away_team_score);
+        homeTeamRCardsTextView = (TextView) findViewById(R.id.home_team_r_cards);
+        homeTeamYCardsTextView = (TextView) findViewById(R.id.home_team_y_cards);
+        awayTeamRCardsTextView = (TextView) findViewById(R.id.away_team_r_cards);
+        awayTeamYCardsTextView = (TextView) findViewById(R.id.away_team_y_cards);
 
         if (savedInstanceState != null) {
             scoreHomeTeam = savedInstanceState.getInt("scoreHomeTeam");
@@ -104,16 +131,15 @@ public class MainActivity extends AppCompatActivity {
      * Displays the given score for Home Team.
      */
     public void displayScoreHomeTeam(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.home_team_score);
-        scoreView.setText(String.valueOf(score));
+        homeTeamScoreTextView.setText(String.valueOf(score));
 
         int value = activity.getResources().getConfiguration().orientation;
 
         if (value == Configuration.ORIENTATION_PORTRAIT) {
             if (score >= 10) {
-                scoreView.setTextSize(100);
+                homeTeamScoreTextView.setTextSize(100);
             } else {
-                scoreView.setTextSize(140);
+                homeTeamScoreTextView.setTextSize(140);
             }
         }
     }
@@ -122,16 +148,15 @@ public class MainActivity extends AppCompatActivity {
      * Displays the given score for Away Team.
      */
     public void displayScoreAwayTeam(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.away_team_score);
-        scoreView.setText(String.valueOf(score));
+        awayTeamScoreTextView.setText(String.valueOf(score));
 
         int value = activity.getResources().getConfiguration().orientation;
 
         if (value == Configuration.ORIENTATION_PORTRAIT) {
             if (score >= 10) {
-                scoreView.setTextSize(100);
+                awayTeamScoreTextView.setTextSize(100);
             } else {
-                scoreView.setTextSize(140);
+                awayTeamScoreTextView.setTextSize(140);
             }
         }
     }
@@ -140,32 +165,28 @@ public class MainActivity extends AppCompatActivity {
      * Displays the red cards for Home Team.
      */
     public void displayRCardsHomeTeam(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.home_team_r_cards);
-        scoreView.setText(String.valueOf(score));
+        homeTeamRCardsTextView.setText(String.valueOf(score));
     }
 
     /**
      * Displays the red cards for Away Team.
      */
     public void displayRCardsAwayTeam(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.away_team_r_cards);
-        scoreView.setText(String.valueOf(score));
+        awayTeamRCardsTextView.setText(String.valueOf(score));
     }
 
     /**
      * Displays the yellow cards for Home Team.
      */
     public void displayYCardsHomeTeam(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.home_team_y_cards);
-        scoreView.setText(String.valueOf(score));
+        homeTeamYCardsTextView.setText(String.valueOf(score));
     }
 
     /**
      * Displays the red cards for Away Team.
      */
     public void displayYCardsAwayTeam(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.away_team_y_cards);
-        scoreView.setText(String.valueOf(score));
+        awayTeamYCardsTextView.setText(String.valueOf(score));
     }
 
 }
