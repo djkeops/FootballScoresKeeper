@@ -7,4 +7,11 @@
     <dimen name="cards_text_size">30sp</dimen>
     <dimen name="normal_padding">5dp</dimen>
     <dimen name="normal_margin">5dp</dimen>
+    <dimen name="normal_elevation">5dp</dimen>
+    <dimen name="normal_radius">5dp</dimen>
+    <dimen name="team_layout_s_margin">10dp</dimen>
+    <dimen name="team_layout_m_margin">15dp</dimen>
+    <dimen name="team_layout_l_margin">20dp</dimen>
+    <dimen name="team_layout_top_padding">10dp</dimen>
+    <dimen name="team_layout_other_padding">20dp</dimen>
 </resources>

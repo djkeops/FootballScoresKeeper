@@ -8,14 +8,13 @@
     </solid>
 
     <padding
-        android:left="20dp"
-        android:top="10dp"
-        android:right="20dp"
-        android:bottom="20dp">
+        android:bottom="@dimen/team_layout_other_padding"
+        android:left="@dimen/team_layout_other_padding"
+        android:right="@dimen/team_layout_other_padding"
+        android:top="@dimen/team_layout_top_padding">
     </padding>
 
-    <corners
-        android:radius="5dp">
+    <corners android:radius="@dimen/normal_radius">
     </corners>
 
 </shape>
