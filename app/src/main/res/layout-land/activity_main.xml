@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!--background image resource: https://www.yelp.com/biz_photos/chavarin-landscaping-san-diego?select=9mUSvAarZPtqKnpgIO3MJg-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -23,13 +24,9 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                style="@style/TeamHeader"
                 android:layout_weight="0.7"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
                 android:text="@string/team_a"
-                android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/team_name_text_size_land" />
 
             <LinearLayout
@@ -40,39 +37,25 @@
 
                 <TextView
                     android:id="@+id/home_team_y_cards"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    style="@style/YCardsTextView"
                     android:layout_weight="1"
-                    android:fontFamily="sans-serif"
-                    android:gravity="center"
-                    android:text="@string/initial_value"
-                    android:textColor="@color/yellow_card"
-                    android:textSize="@dimen/cards_text_size"
-                    android:textStyle="bold" />
+                    android:text="@string/initial_value" />
 
                 <TextView
                     android:id="@+id/home_team_score"
+                    style="@style/ScoreTextView"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
-                    android:fontFamily="@font/scoreboard"
-                    android:gravity="center"
                     android:text="@string/initial_value"
-                    android:textColor="@color/colorPrimary"
                     android:textSize="@dimen/score_text_size_land" />
 
 
                 <TextView
                     android:id="@+id/home_team_r_cards"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    style="@style/RCardsTextView"
                     android:layout_weight="1"
-                    android:fontFamily="sans-serif"
-                    android:gravity="center"
-                    android:text="@string/initial_value"
-                    android:textColor="@color/red_card"
-                    android:textSize="@dimen/cards_text_size"
-                    android:textStyle="bold" />
+                    android:text="@string/initial_value" />
 
             </LinearLayout>
 
@@ -84,32 +67,22 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    style="@style/YCardsImageView"
                     android:layout_weight="1"
-                    android:onClick="addYCardsForHomeTeam"
-                    android:src="@drawable/y_hand" />
+                    android:onClick="addYCardsForHomeTeam" />
 
                 <Button
+                    style="@style/ScoreButton"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
-                    android:layout_margin="0dp"
                     android:layout_weight="2"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:drawableLeft="@drawable/ball"
-                    android:drawableStart="@drawable/ball_s"
-                    android:onClick="addScoreForHomeTeam"
-                    android:text="@string/button_text"
-                    android:textColor="@android:color/white" />
-
+                    android:onClick="addScoreForHomeTeam" />
 
                 <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    style="@style/RCardsImageView"
                     android:layout_weight="1"
-                    android:onClick="addRCardsForHomeTeam"
-                    android:src="@drawable/r_hand" />
+                    android:onClick="addRCardsForHomeTeam" />
 
             </LinearLayout>
 
@@ -123,13 +96,9 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                style="@style/TeamHeader"
                 android:layout_weight="0.7"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
                 android:text="@string/team_b"
-                android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/team_name_text_size_land" />
 
             <LinearLayout
@@ -140,39 +109,25 @@
 
                 <TextView
                     android:id="@+id/away_team_y_cards"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    style="@style/YCardsTextView"
                     android:layout_weight="1"
-                    android:fontFamily="sans-serif"
-                    android:gravity="center"
-                    android:text="@string/initial_value"
-                    android:textColor="@color/yellow_card"
-                    android:textSize="@dimen/cards_text_size"
-                    android:textStyle="bold" />
+                    android:text="@string/initial_value" />
 
                 <TextView
                     android:id="@+id/away_team_score"
+                    style="@style/ScoreTextView"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
-                    android:fontFamily="@font/scoreboard"
-                    android:gravity="center"
                     android:text="@string/initial_value"
-                    android:textColor="@color/colorPrimary"
                     android:textSize="@dimen/score_text_size_land" />
 
 
                 <TextView
                     android:id="@+id/away_team_r_cards"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    style="@style/RCardsTextView"
                     android:layout_weight="1"
-                    android:fontFamily="sans-serif"
-                    android:gravity="center"
-                    android:text="@string/initial_value"
-                    android:textColor="@color/red_card"
-                    android:textSize="@dimen/cards_text_size"
-                    android:textStyle="bold" />
+                    android:text="@string/initial_value" />
 
             </LinearLayout>
 
@@ -184,32 +139,22 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    style="@style/YCardsImageView"
                     android:layout_weight="1"
-                    android:onClick="addYCardsForAwayTeam"
-                    android:src="@drawable/y_hand" />
+                    android:onClick="addYCardsForAwayTeam" />
 
                 <Button
+                    style="@style/ScoreButton"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
-                    android:layout_margin="0dp"
                     android:layout_weight="2"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:drawableLeft="@drawable/ball"
-                    android:drawableStart="@drawable/ball_s"
-                    android:onClick="addScoreForAwayTeam"
-                    android:text="@string/button_text"
-                    android:textColor="@android:color/white" />
-
+                    android:onClick="addScoreForAwayTeam" />
 
                 <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    style="@style/RCardsImageView"
                     android:layout_weight="1"
-                    android:onClick="addRCardsForAwayTeam"
-                    android:src="@drawable/r_hand" />
+                    android:onClick="addRCardsForAwayTeam" />
 
             </LinearLayout>
 
@@ -219,14 +164,8 @@
 
     <Button
         android:id="@+id/reset_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="5dp"
+        style="@style/ResetButton"
         android:layout_weight="0"
-        android:backgroundTint="@color/colorAccent"
-        android:onClick="resetView"
-        android:text="Reset"
-        android:textColor="@android:color/white" />
+        android:onClick="resetView" />
 
 </LinearLayout>
