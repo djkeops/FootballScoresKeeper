@@ -1,42 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-    </style>
 
     <style name="TeamLayoutPortrait">
         <item name="android:layout_marginBottom">@dimen/team_layout_l_margin</item>
+        <item name="android:layout_marginEnd">@dimen/team_layout_m_margin</item>
         <item name="android:layout_marginLeft">@dimen/team_layout_m_margin</item>
         <item name="android:layout_marginRight">@dimen/team_layout_m_margin</item>
+        <item name="android:layout_marginStart">@dimen/team_layout_m_margin</item>
         <item name="android:layout_marginTop">@dimen/team_layout_l_margin</item>
         <item name="android:background">@drawable/rounded_shape</item>
+        <item name="android:elevation">@dimen/normal_elevation</item>
     </style>
 
     <style name="TeamLayoutLand">
         <item name="android:layout_marginBottom">@dimen/team_layout_s_margin</item>
+        <item name="android:layout_marginEnd">@dimen/team_layout_l_margin</item>
         <item name="android:layout_marginLeft">@dimen/team_layout_l_margin</item>
         <item name="android:layout_marginRight">@dimen/team_layout_l_margin</item>
+        <item name="android:layout_marginStart">@dimen/team_layout_l_margin</item>
         <item name="android:layout_marginTop">@dimen/team_layout_s_margin</item>
         <item name="android:background">@drawable/rounded_shape</item>
-    </style>
-
-    <style name="TeamHeader">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">0dp</item>
-        <item name="android:gravity">center</item>
-        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:elevation">@dimen/normal_elevation</item>
     </style>
 
     <style name="ScoreTextView">
+        <item name="android:fontFamily">@font/scoreboard</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/colorPrimary</item>
     </style>
 
     <style name="ScoreButton">
+        <item name="android:backgroundTint">@color/colorPrimary</item>
         <item name="android:text">@string/button_text</item>
         <item name="android:textColor">@android:color/white</item>
         <!--image resource: https://clipartpng.com/-->
@@ -47,32 +41,10 @@
     <style name="CardsTextView">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif</item>
         <item name="android:gravity">center</item>
         <item name="android:textSize">@dimen/cards_text_size</item>
         <item name="android:textStyle">bold</item>
-    </style>
-
-    <style name="RCardsTextView" parent="@style/CardsTextView">
-        <item name="android:textColor">@color/red_card</item>
-    </style>
-
-    <style name="YCardsTextView" parent="@style/CardsTextView">
-        <item name="android:textColor">@color/yellow_card</item>
-    </style>
-
-    <style name="CardsImageView">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">wrap_content</item>
-    </style>
-
-    <style name="RCardsImageView" parent="@style/CardsImageView">
-        <!--Icon made by Freepik (https://www.freepik.com/) from www.flaticon.com-->
-        <item name="android:src">@drawable/r_hand</item>
-    </style>
-
-    <style name="YCardsImageView" parent="@style/CardsImageView">
-        <!--Icon made by Freepik (https://www.freepik.com/) from www.flaticon.com-->
-        <item name="android:src">@drawable/y_hand</item>
     </style>
 
     <style name="ResetButton">
@@ -80,6 +52,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:layout_marginBottom">@dimen/normal_margin</item>
+        <item name="android:backgroundTint">@color/colorAccent</item>
         <item name="android:text">@string/reset</item>
         <item name="android:textColor">@android:color/white</item>
     </style>
