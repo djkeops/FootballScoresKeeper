@@ -9,14 +9,6 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    //Initializing the scores.
-    int scoreHomeTeam = 0;
-    int scoreAwayTeam = 0;
-    int rCardsHomeTeam = 0;
-    int rCardsAwayTeam = 0;
-    int yCardsHomeTeam = 0;
-    int yCardsAwayTeam = 0;
-
     //Declaring TextViews.
     TextView homeTeamScoreTextView;
     TextView awayTeamScoreTextView;
@@ -24,8 +16,14 @@ public class MainActivity extends AppCompatActivity {
     TextView homeTeamYCardsTextView;
     TextView awayTeamRCardsTextView;
     TextView awayTeamYCardsTextView;
-
     Activity activity;
+    //Initializing the scores.
+    private int scoreHomeTeam = 0;
+    private int scoreAwayTeam = 0;
+    private int rCardsHomeTeam = 0;
+    private int rCardsAwayTeam = 0;
+    private int yCardsHomeTeam = 0;
+    private int yCardsAwayTeam = 0;
 
     @Override
     protected void onSaveInstanceState(Bundle savedInstanceState) {
@@ -77,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
      * @param view home_team_score
      */
     public void addScoreForHomeTeam(View view) {
-        scoreHomeTeam = scoreHomeTeam + 1;
+        scoreHomeTeam += 1;
         displayScoreHomeTeam(scoreHomeTeam);
     }
 
@@ -87,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
      * @param view away_team_score
      */
     public void addScoreForAwayTeam(View view) {
-        scoreAwayTeam = scoreAwayTeam + 1;
+        scoreAwayTeam += 1;
         displayScoreAwayTeam(scoreAwayTeam);
     }
 
@@ -97,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
      * @param view home_team_r_cards
      */
     public void addRCardsForHomeTeam(View view) {
-        rCardsHomeTeam = rCardsHomeTeam + 1;
+        rCardsHomeTeam += 1;
         displayRCardsHomeTeam(rCardsHomeTeam);
     }
 
@@ -107,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
      * @param view away_team_r_cards
      */
     public void addRCardsForAwayTeam(View view) {
-        rCardsAwayTeam = rCardsAwayTeam + 1;
+        rCardsAwayTeam += 1;
         displayRCardsAwayTeam(rCardsAwayTeam);
     }
 
@@ -117,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
      * @param view home_team_y_cards
      */
     public void addYCardsForHomeTeam(View view) {
-        yCardsHomeTeam = yCardsHomeTeam + 1;
+        yCardsHomeTeam += 1;
         displayYCardsHomeTeam(yCardsHomeTeam);
     }
 
@@ -127,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
      * @param view away_team_y_cards
      */
     public void addYCardsForAwayTeam(View view) {
-        yCardsAwayTeam = yCardsAwayTeam + 1;
+        yCardsAwayTeam += 1;
         displayYCardsAwayTeam(yCardsAwayTeam);
     }
 
